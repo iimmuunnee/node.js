@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Templete Engine에서의 기본 문법 정리 (탬플릿 태그 사용법) -->
+    <h1> Templete Engine에서의 기본 문법 정리 </h1>
+    <!-- 출력 {{출력내용}} -->
+    <p>{{day}}</p>
+
+    <!-- 문법 사용 -->
+    <!-- 변수만들기 -->
+    {% set num = 10 %}
+    <p>{{num}}</p>
+
+    <!-- 조건문 if ~ elif ~ endif(반드시포함) -->
+    {% if num == 10 %}
+    <p>숫자는 10</p>
+    {% elif num == 20 %}
+    <p>숫자는 20</p>
+    {% else %}
+    <p>알 수 없음</p>
+    {% endif %}
+    
+    <!-- 반복문 for -->
+    {% set menu = [
+        {name : "아메리카노", price : 2000}, 
+        {name : "민트초코", price : 4000},
+        {name : "카페라떼", price : 3000}] %}
+    <table border="1px solid black">
+        <tr>
+            <td colspan="3">MenU</td>
+        </tr>
+        <tr>
+            {% for i in menu %}
+            <td>{{i.name}} {{i.price}}</td>
+            {%endfor%}
+        </tr>
+    </table>
+    <!-- 주석 -->
+</body>
+</html>

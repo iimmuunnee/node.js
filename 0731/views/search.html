@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/user/search" method="post">
+        <input name="id" placeholder="검색할 ID를 입력하세요">
+        <input type="submit">
+    </form>
+    <p>ID : {{result[0].ID}}</p>
+    <p>PW : {{result[0].PW}}</p>
+    <p>NICKNAME : {{result[0].NICK}}</p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>모든 회원 정보</h1>
+    {% set member = rows %}
+    <table border="1px solid black">
+        <tr>
+            <td>ID</td>
+            <td>PW</td>
+            <td>NickName</td>
+        </tr>
+        {% for i in member %}
+        <tr>
+            <td>{{i.ID}}</td>
+            <td>{{i.PW}}</td>
+            <td>{{i.NICK}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+</body>
+</html>

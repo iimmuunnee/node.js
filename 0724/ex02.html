@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        form태그로 데이터 전송시 지켜야할 규칙 
+        1. 어디서버로 데이터를 보낼지? : action 속성 이용! 
+        2. 어떤 값을 보낼지? : name 속성 사용 => 값을 구분 지어서 보내기
+        3. 통신을 시작하기(요청 보내기) : type="submit"
+         >> 버튼이 눌렸을 때 action으로 요청을 보낸다.
+    -->
+    <form action="http://192.168.20.13:4000">
+        <input name="inputId" placeholder="ID 입력"> <br>
+        <input name="inputPw" type="password" placeholder="PW 입력"> <br>
+        <input type="submit">
+        
+    </form>
+</body>
+
+</html>

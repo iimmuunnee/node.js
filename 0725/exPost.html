@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        post 방식 통신
+        1. method 속성 이용 (default = "get")
+        2. action에 통신할 서버 주소 입력
+        3. name 속성 이용해서 key값 설정해주기
+     -->
+    <form action="http://localhost:4000" method="post">
+        <input name="inputId" placeholder="ID 입력"> <br>
+        <input name="inputPw" type="password" placeholder="PW 입력"> <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
